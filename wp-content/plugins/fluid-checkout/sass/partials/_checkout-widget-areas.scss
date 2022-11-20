@@ -1,0 +1,27 @@
+// ------------------------------------
+// CHECKOUT WIDGET AREAS
+// ------------------------------------
+
+.fc-widget-area .widget {
+	margin: 0;
+}
+
+
+
+.fc-widget-area .widget:first-child,
+.fc-widget-area p:first-child {
+	margin-top: 0;
+	margin-block-start: 0;
+}
+
+.fc-widget-area .widget:last-child,
+.fc-widget-area p:last-child {
+	margin-bottom: 0;
+	margin-block-end: 0;
+}
+
+
+
+.fc-wrapper .fc-inside .fc-widget-area.fc-checkout__below-place-order-widgets:last-child {
+	margin-bottom: $global-spacing-small;
+}

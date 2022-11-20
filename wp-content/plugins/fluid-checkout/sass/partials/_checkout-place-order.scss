@@ -1,0 +1,103 @@
+// ------------------------------------
+// CHECKOUT PLACE ORDER
+// ------------------------------------
+
+.fc-wrapper .fc-inside div.place-order {
+	float: none;
+	display: block;
+	padding: $place-order-padding;
+
+	@media (#{$bp-larger-than-desktop}) { padding: $place-order-padding--large-screen; }
+}
+
+
+
+.fc-wrapper .fc-sidebar .fc-sidebar__inner div.place-order {
+	float: none;
+	display: block;
+	margin-top: $global-spacing-small;
+	margin-bottom: $global-spacing-small;
+	padding: $place-order-padding-sidebar;
+}
+
+.fc-wrapper .fc-sidebar .fc-sidebar__inner .fc-checkout-order-review[data-flyout].is-open div.place-order {
+	display: none;
+}
+
+
+
+.fc-wrapper .woocommerce-terms-and-conditions-wrapper {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-align: $alignment-left;
+}
+
+.fc-wrapper .woocommerce-terms-and-conditions-wrapper .woocommerce-form__label {
+	margin-bottom: 0;
+	text-align: $alignment-left;
+}
+
+
+
+.woocommerce-privacy-policy-text:not( :last-child ):not( :empty ) {
+	margin-bottom: $global-spacing-small;
+}
+
+.woocommerce-terms-and-conditions {
+	margin-bottom: $global-spacing-small;
+	padding: $global-spacing-extra-small;
+	background-color: $white;
+}
+
+
+
+.woocommerce-privacy-policy-text > p,
+.woocommerce-terms-and-conditions-wrapper > p {
+	margin-bottom: $global-spacing-small;
+}
+.woocommerce-privacy-policy-text > p:last-child,
+.woocommerce-terms-and-conditions-wrapper > p:last-child {
+	margin-bottom: 0;
+}
+
+
+
+.fc-place-order {
+	padding: $global-spacing 0;
+	text-align: center;
+}
+.fc-place-order:last-of-type {
+	padding-bottom: $global-spacing-extra-small;
+}
+
+// Place order button on the sidebar
+.fc-sidebar .fc-place-order {
+	padding: $global-spacing-small 0;
+}
+
+
+
+// Place order button
+.fc-wrapper .fc-place-order .fc-place-order-button {
+	margin: 0;
+	width: 100%;
+	min-width: remsize( 24rem );
+	min-height: remsize( 5rem );
+	text-align: center;
+
+	&:focus {
+		outline: $focus-outline-button;
+		outline-offset: $focus-outline-offset-button;
+	}
+}
+
+
+
+div.place-order .woocommerce-terms-and-conditions-link,
+div.place-order .woocommerce-privacy-policy-link {
+	&:focus {
+		outline: $focus-outline-link !important; // Needed to override theme styles set with `!important`
+		outline-offset: $focus-outline-offset-link !important; // Needed to override theme styles set with `!important`
+	}
+}
